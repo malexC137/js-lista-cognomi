@@ -1,0 +1,45 @@
+.surnames-box {
+    max-width: 500px;
+}
+
+html {
+    background-image: url(img/scacchi.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* overflow: hidden; */
+    font-family: 'Racing Sans One', cursive;
+}
+
+.surnames-box {
+    transform: translateY(30%);
+}
+
+.container-top {
+    border-radius: 0 0 10px 10px;
+    border: solid 5px rgb(102, 255, 102);
+    border-top: transparent;
+    box-shadow:  1px  1px 5px rgb(102, 255, 102),
+                -1px -1px 5px rgb(102, 255, 102),
+                 1px -1px 5px rgb(102, 255, 102),
+                -1px  1px 5px rgb(102, 255, 102);
+}
+
+.surnames-box {
+    border-radius: 10px;
+    border: solid 5px rgb(255, 255, 0);
+    box-shadow:  1px  1px 5px rgb(255, 255, 0),
+                -1px -1px 5px rgb(255, 255, 0),
+                 1px -1px 5px rgb(255, 255, 0),
+                -1px  1px 5px rgb(255, 255, 0);
+    opacity: 0.9;
+}
+
+.container-bot {
+    border-radius: 10px 10px 0 0;
+    border: solid 5px rgb(102, 255, 102);
+    border-bottom: transparent;
+    box-shadow:  1px  1px 5px rgb(102, 255, 102),
+                -1px -1px 5px rgb(102, 255, 102),
+                 1px -1px 5px rgb(102, 255, 102),
+                -1px  1px 5px rgb(102, 255, 102);
+}

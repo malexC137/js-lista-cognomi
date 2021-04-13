@@ -1,17 +1,19 @@
-var surnamesList = ["Rossi", "Bianchi", "Verdi", "Neri", "Gialli"];
-var userSurname = prompt("Insesrisci il tuo cognome");
+var surnamesList = ["46Rossi", "Iannone", "Petrucci", "Morbidelli", "Dovizioso"];
+var userSurname = prompt("Insesrisci il cognome del tuo pilota preferito");
 surnamesList.push(userSurname);
 surnamesList.sort();
 var indexUser = surnamesList.indexOf(userSurname) + 1;
-var numberedSurnamesList = [];
+var numberedSurnamesList = document.getElementById("surnames-list");
 
 for (var i = 0; i < surnamesList.length; i++) {
-    numberedSurnamesList += (i + 1) + " : " + surnamesList.sort()[i] + "\n";
+    numberedSurnamesList.innerHTML += "<li><h2>" + (i + 1) + " - " + surnamesList.sort()[i] + "</h2></li>";
 }
 
 console.log(numberedSurnamesList);
-console.log("Il cognome inserito '" + userSurname + "' si trova alla " + indexUser + "a posizione")
 
+console.log(userSurname + " partirà dalla " + indexUser + "a posizione")
+
+document.getElementById("username-position").innerHTML = userSurname + " partirà dalla " + indexUser + "a posizione";
 
 
 
